@@ -19,7 +19,7 @@ const Login = () => {
     
         e.preventDefault();
         try {
-            const url = `${import.meta.env.VITE_REACTAPP_BACKEND_BASEURL}/api/auth/logged`;
+            const url = `https://job-purpose-backend.onrender.com/api/auth/logged`;
             const { data: res } = await axios.post(url, data);
            
             navigate("/home",{state:data});
